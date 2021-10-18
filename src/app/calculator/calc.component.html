@@ -1,0 +1,26 @@
+<body>
+  <div class="parent">
+    <h2>ARITHEMETIC OPERATIONS</h2>
+    <div class="child">
+      <h4>Enter two numbers in the fields below</h4>
+      <div class="input">
+        <input [(ngModel)]="num1" type="number" name="n1" id="v1"><br><br>
+      </div>
+      <div class="input">
+        <input [(ngModel)]="num2" type="number" name="n2"><br><br>
+      </div><br>
+      <button (click)="add();">ADDITION</button>
+      <button (click)="sub()">SUBTRACT</button>
+      <button (click)="mul()">MULTIPLY</button>
+      <button (click)="div()">DIVIDE</button>
+      <h3>RESULT: {{ans}}</h3>
+      <h2>FACTORIAL AND PRIME CHECKER</h2>
+      <h4>Enter a number in the field below</h4>
+      <input [(ngModel)]="num" type="number" name="n"><br><br>
+      <button (click)= "fact(num)">FACTORIAL</button>
+      <h3>FACTORIAL OF {{num}} IS: {{sum}}</h3>
+      <button (click)="prime(num)">PRIME CHECKER</button>
+      <h3>THE NUMBER {{num}} IS {{str}}</h3>
+    </div>
+  </div>
+</body>
